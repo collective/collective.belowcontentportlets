@@ -40,9 +40,7 @@ class TestSetup(unittest.TestCase):
         )
         from plone.browserlayer import utils
 
-        self.assertIn(
-            ICollectiveBelowContentPortletsLayer, utils.registered_layers()
-        )
+        self.assertIn(ICollectiveBelowContentPortletsLayer, utils.registered_layers())
 
     def test_portlet_manager_registered(self):
         sm = getSiteManager(self.portal)

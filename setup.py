@@ -14,7 +14,7 @@ long_description = "\n\n".join(
 
 setup(
     name="collective.belowcontentportlets",
-    version="1.0.0a1.dev0",
+    version="1.0.0a1",
     description="Content Type to show an belowcontentportlets",
     long_description=long_description,
     # Get more from https://pypi.org/classifiers/

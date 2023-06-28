@@ -1,4 +1,4 @@
-"""Installer for the collective.abovecontenttitleportlets package."""
+"""Installer for the collective.belowcontentportlets package."""
 
 from setuptools import find_packages
 from setuptools import setup
@@ -13,9 +13,9 @@ long_description = "\n\n".join(
 
 
 setup(
-    name="collective.abovecontenttitleportlets",
+    name="collective.belowcontentportlets",
     version="1.0.0a2.dev0",
-    description="Content Type to show an abovecontenttitleportlets",
+    description="Content Type to show an belowcontentportlets",
     long_description=long_description,
     # Get more from https://pypi.org/classifiers/
     classifiers=[
@@ -36,11 +36,11 @@ setup(
     keywords="Python Plone CMS",
     author="Maurits van Rees",
     author_email="m.van.rees@zestsoftware.nl",
-    url="https://github.com/collective/collective.abovecontenttitleportlets",
+    url="https://github.com/collective/collective.belowcontentportlets",
     project_urls={
-        "PyPI": "https://pypi.org/project/collective.abovecontenttitleportlets/",
-        "Source": "https://github.com/collective/collective.abovecontenttitleportlets",
-        "Tracker": "https://github.com/collective/collective.abovecontenttitleportlets/issues",
+        "PyPI": "https://pypi.org/project/collective.belowcontentportlets/",
+        "Source": "https://github.com/collective/collective.belowcontentportlets",
+        "Tracker": "https://github.com/collective/collective.belowcontentportlets/issues",
     },
     license="GPL version 2",
     packages=find_packages("src", exclude=["ez_setup"]),

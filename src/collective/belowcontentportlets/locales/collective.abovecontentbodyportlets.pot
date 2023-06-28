@@ -15,20 +15,20 @@ msgstr ""
 "Language-Code: en\n"
 "Language-Name: English\n"
 "Preferred-Encodings: utf-8 latin1\n"
-"Domain: collective.abovecontenttitleportlets\n"
+"Domain: collective.belowcontentportlets\n"
 
 #: ../configure.zcml:19
-msgid "Installs the collective.abovecontenttitleportlets add-on."
+msgid "Installs the collective.belowcontentportlets add-on."
 msgstr ""
 
 #: ../configure.zcml:28
-msgid "Uninstalls the collective.abovecontenttitleportlets add-on."
+msgid "Uninstalls the collective.belowcontentportlets add-on."
 msgstr ""
 
 #: ../configure.zcml:19
-msgid "collective.abovecontenttitleportlets"
+msgid "collective.belowcontentportlets"
 msgstr ""
 
 #: ../configure.zcml:28
-msgid "collective.abovecontenttitleportlets (uninstall)"
+msgid "collective.belowcontentportlets (uninstall)"
 msgstr ""

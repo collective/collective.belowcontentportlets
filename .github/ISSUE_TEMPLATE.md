@@ -1,4 +1,4 @@
-* collective.abovecontenttitleportlets version:
+* collective.belowcontentportlets version:
 * Plone Version:
 * Python version:
 * Operating System: Linux

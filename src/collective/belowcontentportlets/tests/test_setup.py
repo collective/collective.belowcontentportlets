@@ -1,5 +1,5 @@
 """Setup tests for this package."""
-from collective.abovecontenttitleportlets.testing import (
+from collective.belowcontentportlets.testing import (
     COLLECTIVE_ABOVE_CONTENT_PORTLETS_INTEGRATION_TESTING,
 )
 from plone import api
@@ -18,7 +18,7 @@ except ImportError:
 
 
 class TestSetup(unittest.TestCase):
-    """Test that collective.abovecontenttitleportlets is properly installed."""
+    """Test that collective.belowcontentportlets is properly installed."""
 
     layer = COLLECTIVE_ABOVE_CONTENT_PORTLETS_INTEGRATION_TESTING
 
@@ -28,20 +28,20 @@ class TestSetup(unittest.TestCase):
         self.installer = get_installer(self.portal, self.layer["request"])
 
     def test_product_installed(self):
-        """Test if collective.abovecontenttitleportlets is installed."""
+        """Test if collective.belowcontentportlets is installed."""
         self.assertTrue(
-            self.installer.is_product_installed("collective.abovecontenttitleportlets")
+            self.installer.is_product_installed("collective.belowcontentportlets")
         )
 
     def test_browserlayer(self):
-        """Test that ICollectiveAboveContentTitlePortletsLayer is registered."""
-        from collective.abovecontenttitleportlets.interfaces import (
-            ICollectiveAboveContentTitlePortletsLayer,
+        """Test that ICollectiveBelowContentPortletsLayer is registered."""
+        from collective.belowcontentportlets.interfaces import (
+            ICollectiveBelowContentPortletsLayer,
         )
         from plone.browserlayer import utils
 
         self.assertIn(
-            ICollectiveAboveContentTitlePortletsLayer, utils.registered_layers()
+            ICollectiveBelowContentPortletsLayer, utils.registered_layers()
         )
 
     def test_portlet_manager_registered(self):
@@ -49,7 +49,7 @@ class TestSetup(unittest.TestCase):
         registrations = [
             r.name for r in sm.registeredUtilities() if IPortletManager == r.provided
         ]
-        self.assertIn("collective.abovecontenttitleportlets", registrations)
+        self.assertIn("collective.belowcontentportlets", registrations)
 
 
 class TestUninstall(unittest.TestCase):
@@ -60,24 +60,24 @@ class TestUninstall(unittest.TestCase):
         self.installer = get_installer(self.portal, self.layer["request"])
         roles_before = api.user.get_roles(TEST_USER_ID)
         setRoles(self.portal, TEST_USER_ID, ["Manager"])
-        self.installer.uninstall_product("collective.abovecontenttitleportlets")
+        self.installer.uninstall_product("collective.belowcontentportlets")
         setRoles(self.portal, TEST_USER_ID, roles_before)
 
     def test_product_uninstalled(self):
-        """Test if collective.abovecontenttitleportlets is cleanly uninstalled."""
+        """Test if collective.belowcontentportlets is cleanly uninstalled."""
         self.assertFalse(
-            self.installer.is_product_installed("collective.abovecontenttitleportlets")
+            self.installer.is_product_installed("collective.belowcontentportlets")
         )
 
     def test_browserlayer_removed(self):
-        """Test that ICollectiveAboveContentTitlePortletsLayer is removed."""
-        from collective.abovecontenttitleportlets.interfaces import (
-            ICollectiveAboveContentTitlePortletsLayer,
+        """Test that ICollectiveBelowContentPortletsLayer is removed."""
+        from collective.belowcontentportlets.interfaces import (
+            ICollectiveBelowContentPortletsLayer,
         )
         from plone.browserlayer import utils
 
         self.assertNotIn(
-            ICollectiveAboveContentTitlePortletsLayer, utils.registered_layers()
+            ICollectiveBelowContentPortletsLayer, utils.registered_layers()
         )
 
     def test_portlet_manager_removed(self):
@@ -85,4 +85,4 @@ class TestUninstall(unittest.TestCase):
         registrations = [
             r.name for r in sm.registeredUtilities() if IPortletManager == r.provided
         ]
-        self.assertNotIn("collective.abovecontenttitleportlets", registrations)
+        self.assertNotIn("collective.belowcontentportlets", registrations)

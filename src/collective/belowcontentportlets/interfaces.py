@@ -2,7 +2,7 @@ from plone.app.portlets.interfaces import IColumn
 from zope.publisher.interfaces.browser import IDefaultBrowserLayer
 
 
-class ICollectiveAboveContentTitlePortletsLayer(IDefaultBrowserLayer):
+class ICollectiveBelowContentPortletsLayer(IDefaultBrowserLayer):
     """Marker interface that defines a browser layer."""
 
 

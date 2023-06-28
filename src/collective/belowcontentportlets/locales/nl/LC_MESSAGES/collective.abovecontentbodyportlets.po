@@ -1,7 +1,7 @@
 # Maurits van Rees <m.van.rees@zestsoftware.nl>, 2023.
 msgid ""
 msgstr ""
-"Project-Id-Version: collective.abovecontenttitleportlets\n"
+"Project-Id-Version: collective.belowcontentportlets\n"
 "POT-Creation-Date: 2023-06-23 20:16+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: Maurits van Rees <m.van.rees@zestsoftware.nl>\n"
@@ -13,21 +13,21 @@ msgstr ""
 "Language-Code: en\n"
 "Language-Name: English\n"
 "Preferred-Encodings: utf-8 latin1\n"
-"Domain: collective.abovecontenttitleportlets\n"
+"Domain: collective.belowcontentportlets\n"
 "Language: en\n"
 
 #: ../configure.zcml:19
-msgid "Installs the collective.abovecontenttitleportlets add-on."
-msgstr "Activeert de collective.abovecontenttitleportlets module."
+msgid "Installs the collective.belowcontentportlets add-on."
+msgstr "Activeert de collective.belowcontentportlets module."
 
 #: ../configure.zcml:28
-msgid "Uninstalls the collective.abovecontenttitleportlets add-on."
-msgstr "Deactiveert de collective.abovecontenttitleportlets module."
+msgid "Uninstalls the collective.belowcontentportlets add-on."
+msgstr "Deactiveert de collective.belowcontentportlets module."
 
 #: ../configure.zcml:19
-msgid "collective.abovecontenttitleportlets"
-msgstr "collective.abovecontenttitleportlets"
+msgid "collective.belowcontentportlets"
+msgstr "collective.belowcontentportlets"
 
 #: ../configure.zcml:28
-msgid "collective.abovecontenttitleportlets (uninstall)"
-msgstr "collective.abovecontenttitleportlets (deactivatie)"
+msgid "collective.belowcontentportlets (uninstall)"
+msgstr "collective.belowcontentportlets (deactivatie)"

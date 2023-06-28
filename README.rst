@@ -4,7 +4,7 @@
 
 
 ====================================
-collective.abovecontenttitleportlets
+collective.belowcontentportlets
 ====================================
 
 Show portlets above the content body.
@@ -13,7 +13,7 @@ Show portlets above the content body.
 Features
 --------
 
-- Plone 6 has left/right/footer portlets.  This package adds abovecontenttitle portlets.
+- Plone 6 has left/right/footer portlets.  This package adds belowcontent portlets.
 - They show above the title.
 
 If you want a portlet slot between the content title/description and the content instead,
@@ -23,14 +23,14 @@ use `collective.abovecontentbodyportlets <https://github.com/collective/collecti
 Installation
 ------------
 
-Install collective.abovecontenttitleportlets by adding it to your buildout::
+Install collective.belowcontentportlets by adding it to your buildout::
 
     [buildout]
 
     ...
 
     eggs =
-        collective.abovecontenttitleportlets
+        collective.belowcontentportlets
 
 
 and then running ``bin/buildout``, starting Plone, and activating it in the Modules control panel.
@@ -47,8 +47,8 @@ Put your name here, you deserve it!
 Contribute
 ----------
 
-- Issue Tracker: https://github.com/collective/collective.abovecontenttitleportlets/issues
-- Source Code: https://github.com/collective/collective.abovecontenttitleportlets
+- Issue Tracker: https://github.com/collective/collective.belowcontentportlets/issues
+- Source Code: https://github.com/collective/collective.belowcontentportlets
 
 
 License

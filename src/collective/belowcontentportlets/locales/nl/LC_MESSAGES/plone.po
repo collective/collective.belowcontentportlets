@@ -2,7 +2,7 @@
 # Maurits van Rees <m.van.rees@zestsoftware.nl>, 2023.
 msgid ""
 msgstr ""
-"Project-Id-Version: collective.abovecontenttitleportlets\n"
+"Project-Id-Version: collective.belowcontentportlets\n"
 "POT-Creation-Date: 2023-06-19 21:31+0000\n"
 "PO-Revision-Date: 2023-06-19 22:13 +0200\n"
 "Last-Translator: Maurits van Rees <m.van.rees@zestsoftware.nl>\n"
@@ -19,5 +19,5 @@ msgstr ""
 
 # This translation is shown in the Manage Portlets toolbar menu.
 #. Default: replace dots by spaces, and titleize.
-msgid "collective.abovecontenttitleportlets"
+msgid "collective.belowcontentportlets"
 msgstr "Boven content titel"

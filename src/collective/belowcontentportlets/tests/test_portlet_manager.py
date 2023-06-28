@@ -1,4 +1,4 @@
-from collective.abovecontenttitleportlets.testing import (
+from collective.belowcontentportlets.testing import (
     COLLECTIVE_ABOVE_CONTENT_PORTLETS_INTEGRATION_TESTING,
 )
 from plone.app.portlets.portlets import login
@@ -24,7 +24,7 @@ class TestPortletManager(unittest.TestCase):
         html = self.portal()
 
         # The portlet manager is on the page.
-        manager_pos = html.find('id="abovecontenttitleportlets"')
+        manager_pos = html.find('id="belowcontentportlets"')
         self.assertTrue(manager_pos != -1)
 
         # First id content, then portlet manager.
@@ -40,13 +40,13 @@ class TestPortletManager(unittest.TestCase):
         self.assertLess(manager_pos, below_content_title_pos)
 
     def test_portlet_manager_link(self):
-        link = "@@topbar-manage-portlets/collective.abovecontenttitleportlets"
+        link = "@@topbar-manage-portlets/collective.belowcontentportlets"
         html = self.portal()
         self.assertIn(link, html)
         # We cannot traverse all the way, we need to use two steps.
         manage_portlets = self.portal.restrictedTraverse("@@topbar-manage-portlets")
         page = manage_portlets.publishTraverse(
-            self.request, "collective.abovecontenttitleportlets"
+            self.request, "collective.belowcontentportlets"
         )
         html = page()
         self.assertIn("Add portlet", html)
@@ -55,7 +55,7 @@ class TestPortletManager(unittest.TestCase):
         # Adapted from login portlet tests.
         portlet = getUtility(IPortletType, name="portlets.Login")
         mapping = self.portal.restrictedTraverse(
-            "++contextportlets++collective.abovecontenttitleportlets"
+            "++contextportlets++collective.belowcontentportlets"
         )
         for m in mapping.keys():
             del mapping[m]
@@ -70,7 +70,7 @@ class TestPortletManager(unittest.TestCase):
 
         # The portlet manager is on the page.
         html = self.portal()
-        manager_pos = html.find('id="abovecontenttitleportlets"')
+        manager_pos = html.find('id="belowcontentportlets"')
         self.assertTrue(manager_pos != -1)
 
         # First portlet manager, then input.

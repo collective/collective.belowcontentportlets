@@ -7,14 +7,17 @@
 collective.belowcontentportlets
 ====================================
 
-Show portlets above the content body.
+Show portlets below the content.
 
 
 Features
 --------
 
-- Plone 6 has left/right/footer portlets.  This package adds belowcontent portlets.
+- Plone 6 has left/right/footer portlets.  This package adds below content portlets.
 - They show above the title.
+
+If you want a portlet slot above the content title instead,
+use `collective.abovecontenttitleportlets <https://github.com/collective/collective.abovecontenttitleportlets>`_.
 
 If you want a portlet slot between the content title/description and the content instead,
 use `collective.abovecontentbodyportlets <https://github.com/collective/collective.abovecontentbodyportlets>`_.

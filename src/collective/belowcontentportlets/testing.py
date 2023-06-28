@@ -20,16 +20,16 @@ class CollectiveBelowContentPortletsLayer(PloneSandboxLayer):
         applyProfile(portal, "collective.belowcontentportlets:default")
 
 
-COLLECTIVE_ABOVE_CONTENT_PORTLETS_FIXTURE = CollectiveBelowContentPortletsLayer()
+COLLECTIVE_BELOW_CONTENT_PORTLETS_FIXTURE = CollectiveBelowContentPortletsLayer()
 
 
-COLLECTIVE_ABOVE_CONTENT_PORTLETS_INTEGRATION_TESTING = IntegrationTesting(
-    bases=(COLLECTIVE_ABOVE_CONTENT_PORTLETS_FIXTURE,),
+COLLECTIVE_BELOW_CONTENT_PORTLETS_INTEGRATION_TESTING = IntegrationTesting(
+    bases=(COLLECTIVE_BELOW_CONTENT_PORTLETS_FIXTURE,),
     name="CollectiveBelowContentPortletsLayer:IntegrationTesting",
 )
 
 
-COLLECTIVE_ABOVE_CONTENT_PORTLETS_FUNCTIONAL_TESTING = FunctionalTesting(
-    bases=(COLLECTIVE_ABOVE_CONTENT_PORTLETS_FIXTURE,),
+COLLECTIVE_BELOW_CONTENT_PORTLETS_FUNCTIONAL_TESTING = FunctionalTesting(
+    bases=(COLLECTIVE_BELOW_CONTENT_PORTLETS_FIXTURE,),
     name="CollectiveBelowContentPortletsLayer:FunctionalTesting",
 )

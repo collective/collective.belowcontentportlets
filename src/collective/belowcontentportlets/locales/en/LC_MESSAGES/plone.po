@@ -20,4 +20,4 @@ msgstr ""
 # This translation is shown in the Manage Portlets toolbar menu.
 #. Default: replace dots by spaces, and titleize.
 msgid "collective.belowcontentportlets"
-msgstr "Above content title"
+msgstr "Below content"

@@ -1,5 +1,5 @@
 from collective.belowcontentportlets.testing import (
-    COLLECTIVE_ABOVE_CONTENT_PORTLETS_INTEGRATION_TESTING,
+    COLLECTIVE_BELOW_CONTENT_PORTLETS_INTEGRATION_TESTING,
 )
 from plone.app.portlets.portlets import login
 from plone.app.testing import logout
@@ -12,7 +12,7 @@ import unittest
 
 
 class TestPortletManager(unittest.TestCase):
-    layer = COLLECTIVE_ABOVE_CONTENT_PORTLETS_INTEGRATION_TESTING
+    layer = COLLECTIVE_BELOW_CONTENT_PORTLETS_INTEGRATION_TESTING
 
     def setUp(self):
         self.app = self.layer["app"]
@@ -32,7 +32,7 @@ class TestPortletManager(unittest.TestCase):
         self.assertLess(content_pos, manager_pos)
 
         # First viewlet manager, then portlet manager.
-        viewlet_manager_pos = html.find('id="viewlet-above-content-title"')
+        viewlet_manager_pos = html.find('id="viewlet-below-content-title"')
         self.assertLess(viewlet_manager_pos, manager_pos)
 
         # First portlet manager, then below content title.

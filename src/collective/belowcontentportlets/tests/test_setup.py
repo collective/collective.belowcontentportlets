@@ -1,6 +1,6 @@
 """Setup tests for this package."""
 from collective.belowcontentportlets.testing import (
-    COLLECTIVE_ABOVE_CONTENT_PORTLETS_INTEGRATION_TESTING,
+    COLLECTIVE_BELOW_CONTENT_PORTLETS_INTEGRATION_TESTING,
 )
 from plone import api
 from plone.app.testing import setRoles
@@ -20,7 +20,7 @@ except ImportError:
 class TestSetup(unittest.TestCase):
     """Test that collective.belowcontentportlets is properly installed."""
 
-    layer = COLLECTIVE_ABOVE_CONTENT_PORTLETS_INTEGRATION_TESTING
+    layer = COLLECTIVE_BELOW_CONTENT_PORTLETS_INTEGRATION_TESTING
 
     def setUp(self):
         """Custom shared utility setup for tests."""
@@ -51,7 +51,7 @@ class TestSetup(unittest.TestCase):
 
 
 class TestUninstall(unittest.TestCase):
-    layer = COLLECTIVE_ABOVE_CONTENT_PORTLETS_INTEGRATION_TESTING
+    layer = COLLECTIVE_BELOW_CONTENT_PORTLETS_INTEGRATION_TESTING
 
     def setUp(self):
         self.portal = self.layer["portal"]
